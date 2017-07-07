@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Install Docker
+
+#!/usr/bin/env bash
+
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+
+# First, add the GPG key for the official Docker repository to the system
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Add the Docker repository to APT sources and update
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+
+# Install docker
+sudo apt-get install -y docker-ce
