@@ -29,3 +29,6 @@ passwd [USER]
 ```
 
 Now, you can access from ```[IP]:21216```
+
+## TODO
+- Add mechanism for modifying a container nicely and commit the image without disrupting service too much
